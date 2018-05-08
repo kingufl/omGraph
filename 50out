@@ -1,0 +1,826 @@
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:0 19883
+ Fact loops:500
+19883 5727 5887 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:1 21927
+ Fact loops:500
+21927 1 1 0
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:2 21933
+ Fact loops:500
+21933 13809 14354 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:3 69432
+ Fact loops:500
+69432 7 7 0
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:4 182793
+ Fact loops:500
+182793 4161 4460 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:5 189541
+ Fact loops:500
+189541 4942 5066 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:6 195219
+ Fact loops:500
+195219 4835 5134 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:7 202962
+ Fact loops:500
+202962 1097 1887 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:8 304396
+ Fact loops:500
+304396 8 8 0
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:9 360160
+ Fact loops:500
+360160 6035 6362 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:10 452081
+ Fact loops:500
+452081 5127 5344 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:11 486262
+ Fact loops:500
+486262 18749 20063 3
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:12 638420
+ Fact loops:500
+638420 1843 1913 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:13 657803
+ Fact loops:500
+657803 16894 36289 6
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:14 705609
+ Fact loops:500
+705609 1639 1733 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:15 723576
+ Fact loops:500
+723576 10580 11107 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:16 723585
+ Fact loops:500
+723585 22 22 0
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:17 733403
+ Fact loops:500
+733403 14067 55802 15
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:18 733405
+ Fact loops:500
+733405 14067 55802 15
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:19 733428
+ Fact loops:500
+733428 14067 55802 15
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:20 789784
+ Fact loops:500
+789784 4297 4472 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:21 819828
+ Fact loops:500
+819828 5662 5861 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:22 823788
+ Fact loops:500
+823788 13172 13619 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:23 843949
+ Fact loops:500
+843949 16599 50013 7
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:24 843950
+ Fact loops:500
+843950 16599 50018 7
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:25 866577
+ Fact loops:500
+866577 307 307 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:26 909077
+ Fact loops:500
+909077 24246 25290 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:27 946281
+ Fact loops:500
+946281 841 859 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:28 953384
+ Fact loops:500
+953384 57001 230044 41
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:29 990054
+ Fact loops:500
+990054 57001 1297956 157
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:30 1010652
+ Fact loops:500
+1010652 57001 1017167 178
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:31 1031400
+ Fact loops:500
+1031400 9437 10080 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:32 1037093
+ Fact loops:500
+1037093 2305 2434 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:33 1089542
+ Fact loops:500
+1089542 11319 12078 2
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:34 1102603
+ Fact loops:500
+1102603 57001 4142029 619
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:35 1107745
+ Fact loops:500
+1107745 5447 5745 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:36 1266458
+ Fact loops:500
+1266458 6268 7168 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:37 1359176
+ Fact loops:500
+1359176 13649 17177 2
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:38 1366351
+ Fact loops:500
+1366351 21719 22681 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:39 1473695
+ Fact loops:500
+1473695 3259 3366 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:40 1481283
+ Fact loops:500
+1481283 57001 1439857 173
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:41 1508176
+ Fact loops:500
+1508176 23533 24621 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:42 1508177
+ Fact loops:500
+1508177 23533 24621 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:43 1511352
+ Fact loops:500
+1511352 2934 3210 0
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:44 1547308
+ Fact loops:500
+1547308 57001 219337 19
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:45 1556079
+ Fact loops:500
+1556079 3 3 0
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:46 1556087
+ Fact loops:500
+1556087 57001 1528179 180
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:47 1556090
+ Fact loops:500
+1556090 57001 1528189 185
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:48 1556095
+ Fact loops:500
+1556095 57001 1528190 180
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:49 1556100
+ Fact loops:500
+1556100 57001 1528226 180
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:50 1556102
+ Fact loops:500
+1556102 57001 1528189 180
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:51 1556103
+ Fact loops:500
+1556103 57001 1528189 180
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:52 1576012
+ Fact loops:500
+1576012 19678 20751 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:53 1576013
+ Fact loops:500
+1576013 7017 7213 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:54 1627320
+ Fact loops:500
+1627320 9404 9961 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:55 1644417
+ Fact loops:500
+1644417 12078 13662 4
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:56 1665079
+ Fact loops:500
+1665079 8717 9175 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:57 1673602
+ Fact loops:500
+1673602 28342 40283 3
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:58 1682758
+ Fact loops:500
+1682758 2588 2680 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:59 1688694
+ Fact loops:500
+1688694 4 4 0
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:60 1731428
+ Fact loops:500
+1731428 16599 19425 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:61 1731429
+ Fact loops:500
+1731429 16599 19425 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:62 1743396
+ Fact loops:500
+1743396 21719 23032 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:63 1748470
+ Fact loops:500
+1748470 2989 4573 2
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:64 1793440
+ Fact loops:500
+1793440 3174 3311 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:65 1803078
+ Fact loops:500
+1803078 14670 15251 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:66 1838740
+ Fact loops:500
+1838740 26 26 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:67 1875877
+ Fact loops:500
+1875877 6060 6202 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:68 1882873
+ Fact loops:500
+1882873 5375 5604 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:69 1904330
+ Fact loops:500
+1904330 1 1 0
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:70 1995812
+ Fact loops:500
+1995812 2777 2874 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:71 2089720
+ Fact loops:500
+2089720 8 8 0
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:72 2104815
+ Fact loops:500
+2104815 28342 42884 3
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:73 2161228
+ Fact loops:500
+2161228 6017 6280 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:74 2327102
+ Fact loops:500
+2327102 26951 32329 2
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:75 2337703
+ Fact loops:500
+2337703 7774 8138 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:76 2355190
+ Fact loops:500
+2355190 1479 1647 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:77 2360351
+ Fact loops:500
+2360351 2339 2428 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:78 2390660
+ Fact loops:500
+2390660 6 6 0
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:79 2390661
+ Fact loops:500
+2390661 8067 8397 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:80 2396993
+ Fact loops:500
+2396993 26 26 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:81 2404149
+ Fact loops:500
+2404149 11 11 0
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:82 2410753
+ Fact loops:500
+2410753 10224 10586 0
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:83 2446205
+ Fact loops:500
+2446205 19202 20155 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:84 2452587
+ Fact loops:500
+2452587 11651 11969 0
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:85 2477158
+ Fact loops:500
+2477158 1894 2001 0
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:86 2535674
+ Fact loops:500
+2535674 3848 4062 2
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:87 2535682
+ Fact loops:500
+2535682 19185 20137 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:88 2540470
+ Fact loops:500
+2540470 413 428 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:89 2582278
+ Fact loops:500
+2582278 10550 10861 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:90 2603448
+ Fact loops:500
+2603448 16320 17105 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:91 2603743
+ Fact loops:500
+2603743 16913 17640 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:92 2635840
+ Fact loops:500
+2635840 9030 11414 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:93 2669104
+ Fact loops:500
+2669104 10351 10808 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:94 2669872
+ Fact loops:500
+2669872 10722 11025 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:95 2674207
+ Fact loops:500
+2674207 57001 1489621 179
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:96 2675240
+ Fact loops:500
+2675240 5439 5857 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:97 2726693
+ Fact loops:500
+2726693 14684 15212 0
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:98 2844815
+ Fact loops:500
+2844815 1496 1780 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:99 2864073
+ Fact loops:500
+2864073 4076 4141 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:100 2876998
+ Fact loops:500
+2876998 57001 76181 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:101 2928640
+ Fact loops:500
+2928640 3389 3579 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:102 2988319
+ Fact loops:500
+2988319 532 535 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:103 3028681
+ Fact loops:500
+3028681 3983 4083 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:104 3041033
+ Fact loops:500
+3041033 3356 3664 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:105 3067634
+ Fact loops:500
+3067634 11547 11968 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:106 3100462
+ Fact loops:500
+3100462 14940 15649 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:107 3107171
+ Fact loops:500
+3107171 5386 5559 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:108 3185526
+ Fact loops:500
+3185526 641 708 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:109 3185528
+ Fact loops:500
+3185528 641 708 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:110 3208472
+ Fact loops:500
+3208472 4640 4796 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:111 3233771
+ Fact loops:500
+3233771 9309 9692 0
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:112 3300559
+ Fact loops:500
+3300559 8742 9297 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:113 3307475
+ Fact loops:500
+3307475 293 356 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:114 3377240
+ Fact loops:500
+3377240 11998 12325 1
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:115 3378407
+ Fact loops:500
+3378407 1376 1468 0
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:116 3379496
+ Fact loops:500
+3379496 20376 43028 9
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+12210050
+12308665
+node under review:117 3426777
+ Fact loops:500
+3426777 57001 3894804 583

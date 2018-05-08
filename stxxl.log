@@ -1,0 +1,2 @@
+[STXXL-MSG] STXXL v1.4.99 (prerelease/Release) (git 263df0c54dc168212d1c7620e3c10c93791c9c29) + gnu parallel(20150716)
+[STXXL-MSG] Disk '/var/tmp/stxxl' is allocated, space: 1000 MiB, I/O implementation: syscall delete_on_exit queue=0 devid=0

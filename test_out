@@ -1,0 +1,7 @@
+Usage : job_array_num || big_d || factoring_loops || packed_file_path || restriction_nodes_file_path
+ D =57000 Factoring loops = 500
+loading dbg
+12210050
+12308665
+node under review:0 19883
+/tmp/slurmd/job14916358/slurm_script: line 14:  3658 Illegal instruction     ./vari_find_paths 1 57000 500 50.reads.dbg restriction_nodes2en50

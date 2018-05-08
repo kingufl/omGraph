@@ -1,0 +1,1 @@
+-pipe -m64 -std=c++14 -pedantic-errors -W -Wall -Wextra -Wpointer-arith -Wunused -Wwrite-strings -DVERSION="0.7.0" -DBANNER="Copyright Alex Bowe (c) 2016" -DK_LEN=32 -DNUM_COLS=128 -O3 -mmmx -msse -msse2 -msse3 -msse4 -msse4.2 -march=core-avx-i -fno-strict-aliasing -DNDEBUG
