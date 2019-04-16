@@ -104,6 +104,115 @@ These people also proved *incredibly* helpful: [Rayan Chikhi][rchikhi], [Simon P
 [sgog]: https://github.com/simongog/
 
 
-## Running omGraph
+## Steps for running omGraph
 
-After the de Bruijn graph is built, the restriction nodes are identified using ./vari_rest_kmers. Then ./vari_find_paths finds the simple paths in the de Bruijn graph and aligns the optical maps to the paths. The file experiments/ecoli.sh gives the pipeline for the entire program. 
+1. Using KMC extract kmers from reads
+
+D=100000
+RES_ENZ="CGGACCG"
+
+KMER_SIZE=55
+READ_FILE="/ufrc/boucher/kingdgp/cosmo/cosmo/experiments/ecoli/corrected/pe_ecoli.fastq"
+FA_FQ="fq"
+
+/ufrc/boucher/kingdgp/cosmo/cosmo/3rd_party_src/KMC/bin/kmc -ci2 -$FA_FQ -k$KMER_SIZE -cs300 $READ_FILE $KMER_SIZE.kmc kmc_temp
+/ufrc/boucher/kingdgp/cosmo/cosmo/3rd_party_src/KMC/bin/kmc_tools sort $KMER_SIZE.kmc $KMER_SIZE.kmc.sorted 
+/ufrc/boucher/kingdgp/cosmo/cosmo/3rd_party_src/KMC/bin/kmc_dump $KMER_SIZE.kmc.sorted $KMER_SIZE.kmc.sorted.dump 
+echo "$KMER_SIZE.kmc.sorted" > $KMER_SIZE.reads.list
+
+2. Build the de Bruijn graph using cosmo-build
+
+numactl --interleave=all /usr/bin/time -v /ufrc/boucher/kingdgp/cosmo/vari/cosmo/cosmo-build -d $KMER_SIZE.reads.dbg
+
+3. Use vari_rest_kmers to extract all restriction kmers from the graph
+
+./vari_rest_kmers -o $RES_ENZ1 $KMER_SIZE.reads.dbg
+
+4. Use vari_find_paths to find all simple paths between restriction nodes
+
+./vari_find_paths <big_d> <factoring_loops> <dbg_file_path> <restriction_nodes_file_path>
+
+ex
+./vari_find_paths 100000 500 $KMER_SIZE.reads.dbg restriction_nodes
+
+5. Use seeding_ext to find alignments of Rmaps in the DBG
+
+./seeding_ext <simple_paths_file> <k_gram_size> <rmap_file_path>
+
+ex 
+./seeding_ext /ufrc/boucher/kingdgp/cosmo/cosmo/proper_edges/edges1en63_f500 3 ecoli.map
+
+
+## Inputs of omGraph
+
+1. Read file in fasta or fastq format
+
+2. Rmap file in the following format. The fragments are in kbp.
+
+rmap_0  1.259  5.397  6.57  2.696  22.841  17.412  1.836  3.224  1.51  10.925  9.356  11.331  8.78  7.887  50.162  28.192  8.706  5.601 
+rmap_2  57.633  5.228  10.023  11.951  6.854  1.158  4.903  6.293  3.094  22.78  17.565  1.863  3.22  1.388  10.775  9.414  
+rmap_3  5.935  6.568  2.709  22.6  17.239  1.823  3.198  1.508  10.965  9.313  11.361  8.8  7.966  49.833  27.797  8.571  5.577  
+rmap_4  1.482  5.34  6.609  2.718  22.259  17.991  1.909  3.175  1.249  10.744  9.403  11.327  9.018  7.915  49.928  27.578  8.481 
+rmap_5  5.688  6.491  2.705  22.663  17.396  1.931  3.261  1.412  10.957  9.437  11.33  8.89  7.767  50.386  27.165  13.687  
+
+
+## Outputs of omGraph
+
+1. The restriction nodes file contains the list of restriction nodes found in the graph along with their node ID in the graph
+
+ex
+
+54341 CGGACCGTTCACGCGCTTCAGCCTGTAAAAA
+69190 CGGACCGATGAACTCTGGGTTCAGGCCAAAA
+186848 CGGACCGTAATGCCTTACATTACCAGCCAAA
+268644 CGGACCGGTCGTCGGGGAAATTCTCGAGAAA
+294618 CGGACCGAAGAAACTGGCACCACCATCGAAA
+308759 CGGACCGGCTAGTTACGCAGTGCGGCGGAAA
+330034 CGGACCGCCAGGCGCAATTTGCACGATGAAA
+336439 CGGACCGTCTCCATCTGGTCGTAGCCTGAAA
+443658 CGGACCGGACCAAATTCCTAAAATCAAACAA
+499871 CGGACCGGCAAATCAATTTCACCAGCTACAA
+545543 CGGACCGGAGAGCGCGCTTTCAGGCCGCCAA
+767794 CGGACCGTGGCGACCACCCGCACGACCAGAA
+773657 CGGACCGGCCACGGCTTCCACATATCCAGAA
+778907 CGGACCGTTTGCCGGGCAAATGTTCGCAGAA
+779903 CGGACCGATAAACTCTGGATCGGCGGCAGAA
+802015 CGGACCGGCACGGTGTCCCAAAGGGTGAGAA
+
+2. The simple paths file contains all simple paths between pairs of restriction nodes. 
+The format is <source_node_id> <destination_node_id> <path_length_in_dbg>
+
+ex
+
+18954121 20846886 7730
+18993618 16943406 12235
+18993618 16998481 12235
+18993618 16944255 12235
+18993618 13568127 40501
+19013547 3710101 16625
+19211673 21148041 7133
+19231575 10060163 4640
+19292285 1160390 1951
+
+
+3. The file rmap_alignements.txt contains the sequence of restriction nodes to which an Rmap aligns
+
+rmap_0	640110 640123 22703333 8347638 15737788 15654806 640110 4985662 10816414 950755 
+rmap_2	640110 640123 4985662 15956018 12597034 
+rmap_4	12767312 640110 640123 10822804 15956018 12597034 
+rmap_5	6221649 2671121 22333100 5260490 640123 640110 17178034 640110 4985662 10816414 
+rmap_6	17736748 15180487 7818715 17515656 640123 640110 10923440 
+
+4. The file rmap_alignements_lengths.txt contains the lengths of simple paths between an aligned pair of restriction nodes
+
+ex
+
+rmap_0	7936 50566 27997 8621 5656 0 35287 12150 12665 
+rmap_2	7936 49741 27453 8762 
+rmap_4	9403 7936 49441 27453 8762 
+rmap_5	9252 11292 8692 7936 50566 26832 14093 52150 12150 
+rmap_6	5656 8621 27997 50566 7936 8151 
+
+(There is a simple path from 640110 to 640123 whose length is 7936)
+
+
