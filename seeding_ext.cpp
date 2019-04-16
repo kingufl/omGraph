@@ -802,123 +802,123 @@ return(all_paths_dis);
 
 }
 
-vector < pair<float , float> > optimized_overlap_alignment(vector< float >& rmap1, vector< float >& rmap2, int p1, int p2);
-
-
-float find_opt_alignment(vector <int> tar, vector <int> que){
-    vector < float > rmap1,rmap2;
-    for(int i=0;i<que.size();i++){
-        rmap1.push_back((float)que[i]/1000);
-//        cout<<rmap1[i]<<" ";
-    }
-    for(int i=0;i<tar.size();i++){
-        rmap2.push_back((float)tar[i]/1000);
-//        cout<<rmap2[i]<<" ";
-    }
-
-    vector < pair<float ,float> > alignment_sc=optimized_overlap_alignment(rmap1,rmap2,0,0);
-
-    return(alignment_sc[0].first);
-
-    cout<<endl<<endl;
-
-    int p_max=3;
-    int q_max=3;
-    float penalty_for_indel=1;
-    vector< vector <int> > dp_table(tar.size()+1);
-    vector< vector <pair<int,int> > > back_track(tar.size());
-    for(int i=0;i<tar.size()+1;i++){
-        dp_table[i].resize(que.size()+1);
-        back_track[i].resize(que.size());
-    }
-    for(int i=0;i<dp_table.size();i++){
-        dp_table[i][0]=100000;
-    }
-    for(int i=0;i<dp_table[0].size();i++){
-        dp_table[0][i]=100000;
-    }
-
-    dp_table[0][0]=0;
-
-
-    cout<<"table initialized";
-
-    for(int i=1;i<dp_table.size();i++){
-        for(int j=1;j<dp_table[0].size();j++){
-            pair <int,int> tem_pair(0,0);
-            float min_sc=10000;
-            for(int p=0;p<=p_max;p++){
-                for(int q=0;q<=q_max;q++){
-                    if(i-p-1<0 || j-q-1<0)
-                        continue;
-                    float sum_tar=0,sum_que=0;
-                    for(int it_tar=i-p-1;it_tar<=i-1;it_tar++)
-                        sum_tar+=tar[it_tar];
-                    for(int it_que=j-q-1;it_que<=j-1;it_que++)
-                        sum_que+=que[it_que];
-                    float score=dp_table[i-p-1][j-q-1]+abs(p+q)*penalty_for_indel+abs(sum_tar-sum_que);
-                    if(score<min_sc){
-                        min_sc=score;
-                        tem_pair=make_pair(i-p-1,j-q-1);
-                    }
-
-                }
-            }
-            back_track[i-1][j-1]=tem_pair;
-            dp_table[i][j]= min_sc;
-        }
-    }
-
-//for(int i=0; i<tar.size()+1; i++){
-//    for(int j=0;j<que.size()+1;j++){
-//        cout<< dp_table[i][j]<<"  ";
+//vector < pair<float , float> > optimized_overlap_alignment(vector< float >& rmap1, vector< float >& rmap2, int p1, int p2);
+//
+//
+//float find_opt_alignment(vector <int> tar, vector <int> que){
+//    vector < float > rmap1,rmap2;
+//    for(int i=0;i<que.size();i++){
+//        rmap1.push_back((float)que[i]/1000);
+////        cout<<rmap1[i]<<" ";
 //    }
-//    cout<<endl;
+//    for(int i=0;i<tar.size();i++){
+//        rmap2.push_back((float)tar[i]/1000);
+////        cout<<rmap2[i]<<" ";
+//    }
+//
+//    vector < pair<float ,float> > alignment_sc=optimized_overlap_alignment(rmap1,rmap2,0,0);
+//
+//    return(alignment_sc[0].first);
+//
+//    cout<<endl<<endl;
+//
+//    int p_max=3;
+//    int q_max=3;
+//    float penalty_for_indel=1;
+//    vector< vector <int> > dp_table(tar.size()+1);
+//    vector< vector <pair<int,int> > > back_track(tar.size());
+//    for(int i=0;i<tar.size()+1;i++){
+//        dp_table[i].resize(que.size()+1);
+//        back_track[i].resize(que.size());
+//    }
+//    for(int i=0;i<dp_table.size();i++){
+//        dp_table[i][0]=100000;
+//    }
+//    for(int i=0;i<dp_table[0].size();i++){
+//        dp_table[0][i]=100000;
+//    }
+//
+//    dp_table[0][0]=0;
+//
+//
+//    cout<<"table initialized";
+//
+//    for(int i=1;i<dp_table.size();i++){
+//        for(int j=1;j<dp_table[0].size();j++){
+//            pair <int,int> tem_pair(0,0);
+//            float min_sc=10000;
+//            for(int p=0;p<=p_max;p++){
+//                for(int q=0;q<=q_max;q++){
+//                    if(i-p-1<0 || j-q-1<0)
+//                        continue;
+//                    float sum_tar=0,sum_que=0;
+//                    for(int it_tar=i-p-1;it_tar<=i-1;it_tar++)
+//                        sum_tar+=tar[it_tar];
+//                    for(int it_que=j-q-1;it_que<=j-1;it_que++)
+//                        sum_que+=que[it_que];
+//                    float score=dp_table[i-p-1][j-q-1]+abs(p+q)*penalty_for_indel+abs(sum_tar-sum_que);
+//                    if(score<min_sc){
+//                        min_sc=score;
+//                        tem_pair=make_pair(i-p-1,j-q-1);
+//                    }
+//
+//                }
+//            }
+//            back_track[i-1][j-1]=tem_pair;
+//            dp_table[i][j]= min_sc;
+//        }
+//    }
+//
+////for(int i=0; i<tar.size()+1; i++){
+////    for(int j=0;j<que.size()+1;j++){
+////        cout<< dp_table[i][j]<<"  ";
+////    }
+////    cout<<endl;
+////}
+////
+////for(int i=1; i<tar.size()+1; i++){
+////    for(int j=1;j<que.size()+1;j++){
+////        cout<<"("<< back_track[i-1][j-1].first<<","<<back_track[i-1][j-1].second<<") ";
+////    }
+////    cout<<endl;
+////}
+////
+////cout<<endl;
+//
+//int a=tar.size()-1,b=que.size()-1;
+//vector <pair<int,int>> alignments;
+//alignments.push_back(make_pair(tar.size(),que.size()));
+//while(back_track[a][b].first!=0 && back_track[a][b].second!=0){
+//    alignments.push_back(make_pair(back_track[a][b].first,back_track[a][b].second));
+////    cout<<"("<<back_track[a][b].first<<","<<back_track[a][b].second<<") ";
+//    int ta=back_track[a][b].first-1;
+//    int tb=back_track[a][b].second-1;
+//    a=ta;b=tb;
 //}
 //
-//for(int i=1; i<tar.size()+1; i++){
-//    for(int j=1;j<que.size()+1;j++){
-//        cout<<"("<< back_track[i-1][j-1].first<<","<<back_track[i-1][j-1].second<<") ";
-//    }
-//    cout<<endl;
-//}
+//a=1,b=1;
 //
 //cout<<endl;
-
-int a=tar.size()-1,b=que.size()-1;
-vector <pair<int,int>> alignments;
-alignments.push_back(make_pair(tar.size(),que.size()));
-while(back_track[a][b].first!=0 && back_track[a][b].second!=0){
-    alignments.push_back(make_pair(back_track[a][b].first,back_track[a][b].second));
-//    cout<<"("<<back_track[a][b].first<<","<<back_track[a][b].second<<") ";
-    int ta=back_track[a][b].first-1;
-    int tb=back_track[a][b].second-1;
-    a=ta;b=tb;
-}
-
-a=1,b=1;
-
-cout<<endl;
-for(int i=alignments.size()-1;i>=0;i--){
-    for(int j1=a;j1<=alignments[i].first;j1++){
-        cout<<tar[j1-1]<<" ";
-    }
-    cout<<" ---> ";
-
-    for(int j2=b;j2<=alignments[i].second;j2++){
-        cout<<que[j2-1]<<" ";
-    }
-    cout<<endl;
-    a=alignments[i].first+1;
-    b=alignments[i].second+1;
-
-}
-cout<<endl;
-
-return(dp_table[tar.size()][que.size()]);
-
-
-}
+//for(int i=alignments.size()-1;i>=0;i--){
+//    for(int j1=a;j1<=alignments[i].first;j1++){
+//        cout<<tar[j1-1]<<" ";
+//    }
+//    cout<<" ---> ";
+//
+//    for(int j2=b;j2<=alignments[i].second;j2++){
+//        cout<<que[j2-1]<<" ";
+//    }
+//    cout<<endl;
+//    a=alignments[i].first+1;
+//    b=alignments[i].second+1;
+//
+//}
+//cout<<endl;
+//
+//return(dp_table[tar.size()][que.size()]);
+//
+//
+//}
 
 
 void print_multi_graph_stats(){
