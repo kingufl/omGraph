@@ -446,7 +446,7 @@ vector < vector < trip_sp > > best_seeds;
 int found_seed;
 
 float min_sz_err=1000;
-int max_k;
+int max_kk;
 
 int found;
 
@@ -461,22 +461,22 @@ int check_frag(int u, int k, int k_max, int relax){
     if (k==temp_kgram.size() && k>kgram_size-1){
 
         found++;
-        if(max_k<k){
-            max_k=k;
+        if(max_kk<k){
+            max_kk=k;
             seed.clear();
             vector<trip_sp> temp_sp=curr_path;
-            temp_sp.resize(max_k, trip_sp(0,0,0));
+            temp_sp.resize(max_kk, trip_sp(0,0,0));
             seed.push_back(temp_sp);
 //            seed.push_back(curr_path);
-//            seed.back().resize(max_k);
+//            seed.back().resize(max_kk);
             return k;
         }
-        else if(max_k==k){
+        else if(max_kk==k){
             vector<trip_sp> temp_sp=curr_path;
-            temp_sp.resize(max_k, trip_sp(0,0,0));
+            temp_sp.resize(max_kk, trip_sp(0,0,0));
             seed.push_back(temp_sp);
 //            seed.push_back(curr_path);
-//            seed.back().resize(max_k);
+//            seed.back().resize(max_kk);
             return k;
 
         }
@@ -523,22 +523,22 @@ int check_frag(int u, int k, int k_max, int relax){
 
 //    if(nxt_true==0 && k>3){
 //        found++;
-//        if(max_k<k){
-//            max_k=k;
+//        if(max_kk<k){
+//            max_kk=k;
 //            seed.clear();
 //            vector<trip_sp> temp_sp=currcheck_kgram(kgram,300);_path;
-//            temp_sp.resize(max_k, trip_sp(0,0,0));
+//            temp_sp.resize(max_kk, trip_sp(0,0,0));
 //            seed.push_back(temp_sp);
 ////            seed.push_back(curr_path);
-////            seed.back().resize(max_k);
+////            seed.back().resize(max_kk);
 //            return k;
 //        }
-//        else if(max_k==k){
+//        else if(max_kk==k){
 //            vector<trip_sp> temp_sp=curr_path;
-//            temp_sp.resize(max_k, trip_sp(0,0,0));
+//            temp_sp.resize(max_kk, trip_sp(0,0,0));
 //            seed.push_back(temp_sp);
 ////            seed.push_back(curr_path);
-////            seed.back().resize(max_k);
+////            seed.back().resize(max_kk);
 //            return k;
 //
 //        }
@@ -554,7 +554,7 @@ int check_kgram(vector <int> kgram, int relax){
     pair< int, int > tem=find_h(kgram[0],0.1);
 //    int l=tem.first,h=tem.second;
     int l=kgram[0]-relax,h=kgram[0]+relax;
-    max_k=1;
+    max_kk=1;
     seed.clear();
     temp_kgram=kgram;
     count_seed=0;
@@ -583,13 +583,13 @@ int check_kgram(vector <int> kgram, int relax){
 
 
 
-//    for(int i=0;i<max_k;i++){
+//    for(int i=0;i<max_kk;i++){
 //        cout<<kgram[i]<<" ";
 //    }
 //    cout<<endl<<endl<<endl;
     if(debug==true){
 //    for(int i=0;i<seed.size();i++){
-//        for(int j=0;j<max_k;j++){
+//        for(int j=0;j<max_kk;j++){
 //            cout<<"("<<seed[i][j].u<<"--"<<seed[i][j].d<<"-->"<<seed[i][j].v<<")";
 //        }
 //
@@ -1892,133 +1892,133 @@ cout<<" Total gaps: "<<gaps<<endl<<" Gaps for which no paths found: "<<total_pat
 //    loopy_nodes.insert(ln);
 ////    cout<<ln<<endl;
 //  }
-  string input_filename="/ufrc/boucher/kingdgp/cosmo/cosmo/experiments/32.list.packed";
-
-  ifstream input(input_filename, ios::in|ios::binary|ios::ate);
-  // Can add this to save a couple seconds off traversal - not really worth it.
-  //vector<size_t> minus_positions;
-  debruijn_graph<> dbg = debruijn_graph<>::load_from_packed_edges(input, "$ACGT"/*, &minus_positions*/);
-  input.close();
-
-
-//  return 1;
-
-//  string restriction_enzyme = p.restriction_seq;
-
-  cout<<dbg.num_nodes()<<endl;
-  cout<<dbg.num_edges()<<endl;
-
-
-  ifstream infile;
-  infile.open("restriction_nodes_32");
-  int new_node;
-
-  vector <int> rest_nodes_vec;
-
-  string str;
-
-  while(getline(infile, str))
-    {
-        istringstream ss(str);
-
-        ss >> new_node;
-        rest_nodes.insert(new_node);
-        rest_nodes_vec.push_back(new_node);
-
-    }
-//    ofstream offile;
-//    offile.open("DBG_dist_32");
-//    for(int i=0;i<rest_nodes_vec.size();i++){
-//        offile<<dbg.outdegree(rest_nodes_vec[i])<<endl;
-//    }
-//    return 1;
-    cout<<"node under review:"<<num-1<<" "<<rest_nodes_vec[num-1]<<endl;
-
-
-//  cout<< "num rest nodes:"<<rest_nodes.size()<<endl;
-    infile.close();
-
-    int run=0;
-
-//    for (it=rest_nodes.begin(); it!=rest_nodes.end(); ++it){
-//        cout<<"-"<<++run<<"-"<<endl;importdata('C:\Users\King\Desktop\Rmaps\rmaps2\rmap_relations_stats.txt');
-////        find_all_paths_dp(dbg, 17320  , 25000);
-//        for(int i=0;i<rest_nodes_vec.size();i++){
-//            find_all_paths_dp(dbg, rest_nodes_vec[i] , 50000);
-//        }
-        find_all_paths_dp(dbg, rest_nodes_vec[num-1] , 50000);
-
-//   }
-//    int sd=0;
-//    int cnt=0;
-//    int maxb=0;
-//    ofstream explore;
-//    explore.open("explore");
-//    for(int i=0;i<visited_dis.size();i++){
-//        if(visited_dis[i].size()==0)
-//            continue;
-//        if(visited_dis[i].back()-visited_dis[i][0]>maxb)
-//            maxb=visited_dis[i].back()-visited_dis[i][0];
-//        sd+=visited_dis[i].back()-visited_dis[i][0];
-//        cnt++;
-////        explore<<i<<"\t";
-////        for(int j=0;j<visited_dis[i].size();j++)
-////            explore<<visited_dis[i][j]<<" ";
+//  string input_filename="/ufrc/boucher/kingdgp/cosmo/cosmo/experiments/32.list.packed";
 //
-////        explore<<endl;
+//  ifstream input(input_filename, ios::in|ios::binary|ios::ate);
+//  // Can add this to save a couple seconds off traversal - not really worth it.
+//  //vector<size_t> minus_positions;
+//  debruijn_graph<> dbg = debruijn_graph<>::load_from_packed_edges(input, "$ACGT"/*, &minus_positions*/);
+//  input.close();
+//
+//
+////  return 1;
+//
+////  string restriction_enzyme = p.restriction_seq;
+//
+//  cout<<dbg.num_nodes()<<endl;
+//  cout<<dbg.num_edges()<<endl;
+//
+//
+//  ifstream infile;
+//  infile.open("restriction_nodes_32");
+//  int new_node;
+//
+//  vector <int> rest_nodes_vec;
+//
+//  string str;
+//
+//  while(getline(infile, str))
+//    {
+//        istringstream ss(str);
+//
+//        ss >> new_node;
+//        rest_nodes.insert(new_node);
+//        rest_nodes_vec.push_back(new_node);
+//
 //    }
-
-//    cout<<"Average bulge size: " <<sd/cnt<<endl;
-//    cout<<"Max bulge size: " <<maxb<<endl;
-
-    ofstream ofile;
-    string f_name="edges/"+nu+".edges";
-    ofile.open(f_name.c_str());
-
-    for(int i=0;i<all_edges.size();i++){
-            ofile<<all_edges[i].source<<" "<<all_edges[i].target<<" "<<all_edges[i].distance<<endl;
-
-    }
-
-    time_t oend = clock();
-
-    ofstream time_file;
-    string t_file="edges/"+nu+".time";
-    time_file.open(t_file.c_str());
-    time_file<<double(oend - ostart) / CLOCKS_PER_SEC<<endl;
-    time_file.close();
-
-    return 1;
-
-    ofile.close();
-    ofile.open("mgraph.txt");
-
-    ofstream ofile2;
-    ofile2.open("tracker.txt");
-
-    run=0;
-
-    for (it=rest_nodes.begin(); it!=rest_nodes.end(); ++it){
-            run++;
-//            if (run<9)
-//                continue;
-            if (run>10000)
-                break;
-          nodes_visited=0;
-          ofile2<<"origin:"<<*it<<" ";
-
-
-    }
-
-     for(int i=0;i<Medges.size();i++){
-            ofile<<Medges[i].source<<" "<<Medges[i].target<<" "<<Medges[i].distance<<endl<<endl;
-
-    }
-
-//  find_restriction_kmers(dbg, restriction_enzyme);
-
-
-
-    ofile.close();
+////    ofstream offile;
+////    offile.open("DBG_dist_32");
+////    for(int i=0;i<rest_nodes_vec.size();i++){
+////        offile<<dbg.outdegree(rest_nodes_vec[i])<<endl;
+////    }
+////    return 1;
+//    cout<<"node under review:"<<num-1<<" "<<rest_nodes_vec[num-1]<<endl;
+//
+//
+////  cout<< "num rest nodes:"<<rest_nodes.size()<<endl;
+//    infile.close();
+//
+//    int run=0;
+//
+////    for (it=rest_nodes.begin(); it!=rest_nodes.end(); ++it){
+////        cout<<"-"<<++run<<"-"<<endl;importdata('C:\Users\King\Desktop\Rmaps\rmaps2\rmap_relations_stats.txt');
+//////        find_all_paths_dp(dbg, 17320  , 25000);
+////        for(int i=0;i<rest_nodes_vec.size();i++){
+////            find_all_paths_dp(dbg, rest_nodes_vec[i] , 50000);
+////        }
+//        find_all_paths_dp(dbg, rest_nodes_vec[num-1] , 50000);
+//
+////   }
+////    int sd=0;
+////    int cnt=0;
+////    int maxb=0;
+////    ofstream explore;
+////    explore.open("explore");
+////    for(int i=0;i<visited_dis.size();i++){
+////        if(visited_dis[i].size()==0)
+////            continue;
+////        if(visited_dis[i].back()-visited_dis[i][0]>maxb)
+////            maxb=visited_dis[i].back()-visited_dis[i][0];
+////        sd+=visited_dis[i].back()-visited_dis[i][0];
+////        cnt++;
+//////        explore<<i<<"\t";
+//////        for(int j=0;j<visited_dis[i].size();j++)
+//////            explore<<visited_dis[i][j]<<" ";
+////
+//////        explore<<endl;
+////    }
+//
+////    cout<<"Average bulge size: " <<sd/cnt<<endl;
+////    cout<<"Max bulge size: " <<maxb<<endl;
+//
+//    ofstream ofile;
+//    string f_name="edges/"+nu+".edges";
+//    ofile.open(f_name.c_str());
+//
+//    for(int i=0;i<all_edges.size();i++){
+//            ofile<<all_edges[i].source<<" "<<all_edges[i].target<<" "<<all_edges[i].distance<<endl;
+//
+//    }
+//
+//    time_t oend = clock();
+//
+//    ofstream time_file;
+//    string t_file="edges/"+nu+".time";
+//    time_file.open(t_file.c_str());
+//    time_file<<double(oend - ostart) / CLOCKS_PER_SEC<<endl;
+//    time_file.close();
+//
+//    return 1;
+//
+//    ofile.close();
+//    ofile.open("mgraph.txt");
+//
+//    ofstream ofile2;
+//    ofile2.open("tracker.txt");
+//
+//    run=0;
+//
+//    for (it=rest_nodes.begin(); it!=rest_nodes.end(); ++it){
+//            run++;
+////            if (run<9)
+////                continue;
+//            if (run>10000)
+//                break;
+//          nodes_visited=0;
+//          ofile2<<"origin:"<<*it<<" ";
+//
+//
+//    }
+//
+//     for(int i=0;i<Medges.size();i++){
+//            ofile<<Medges[i].source<<" "<<Medges[i].target<<" "<<Medges[i].distance<<endl<<endl;
+//
+//    }
+//
+////  find_restriction_kmers(dbg, restriction_enzyme);
+//
+//
+//
+//    ofile.close();
 
 }
