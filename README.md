@@ -122,7 +122,7 @@ echo "$KMER_SIZE.kmc.sorted" > $KMER_SIZE.reads.list
 
 2. Build the de Bruijn graph using cosmo-build
 
-numactl --interleave=all /usr/bin/time -v /ufrc/boucher/kingdgp/cosmo/vari/cosmo/cosmo-build -d $KMER_SIZE.reads.dbg
+numactl --interleave=all /usr/bin/time -v /ufrc/boucher/kingdgp/cosmo/vari/cosmo/cosmo-build -d $KMER_SIZE.reads.list
 
 3. Use vari_rest_kmers to extract all restriction kmers from the graph
 
