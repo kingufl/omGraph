@@ -22,7 +22,7 @@ VERSION=0.7.0
 BANNER='Copyright Alex Bowe (c) 2016'
 CPP_FLAGS+=-DVERSION=\"$(VERSION)\" -DBANNER=\"$(BANNER)\"
 
-k?=32
+k?=64
 # TODO: quantize k
 CPP_FLAGS+=-DK_LEN=$(k)
 
