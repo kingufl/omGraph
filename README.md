@@ -106,23 +106,11 @@ These people also proved *incredibly* helpful: [Rayan Chikhi][rchikhi], [Simon P
 
 ## Steps for running omGraph
 
-1. Using KMC extract kmers from reads
+1. Error correct optical maps using cOMet.
 
-D=100000
-RES_ENZ="CGGACCG"
+2. Build the de Bruijn graph using cosmo-build. Follow instructions from the cosmo-vari page. The output is a .dbg file.
 
-KMER_SIZE=55
-READ_FILE="/ufrc/boucher/kingdgp/cosmo/cosmo/experiments/ecoli/corrected/pe_ecoli.fastq"
-FA_FQ="fq"
-
-/ufrc/boucher/kingdgp/cosmo/cosmo/3rd_party_src/KMC/bin/kmc -ci2 -$FA_FQ -k$KMER_SIZE -cs300 $READ_FILE $KMER_SIZE.kmc kmc_temp
-/ufrc/boucher/kingdgp/cosmo/cosmo/3rd_party_src/KMC/bin/kmc_tools sort $KMER_SIZE.kmc $KMER_SIZE.kmc.sorted 
-/ufrc/boucher/kingdgp/cosmo/cosmo/3rd_party_src/KMC/bin/kmc_dump $KMER_SIZE.kmc.sorted $KMER_SIZE.kmc.sorted.dump 
-echo "$KMER_SIZE.kmc.sorted" > $KMER_SIZE.reads.list
-
-2. Build the de Bruijn graph using cosmo-build
-
-numactl --interleave=all /usr/bin/time -v /ufrc/boucher/kingdgp/cosmo/vari/cosmo/cosmo-build -d $KMER_SIZE.reads.list
+https://github.com/cosmo-team/cosmo/tree/VARI
 
 3. Use vari_rest_kmers to extract all restriction kmers from the graph
 
@@ -145,7 +133,7 @@ ex
 
 ## Inputs of omGraph
 
-1. Read file in fasta or fastq format
+1. De bruijn graph produced by cosmo. The extension is .dbg.
 
 2. Rmap file in the following format. The fragments are in kbp.
 
